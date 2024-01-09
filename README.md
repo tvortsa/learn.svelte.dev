@@ -1,30 +1,30 @@
 # learn.svelte.dev
 
-A soup-to-nuts interactive tutorial on how to build apps with Svelte.
+Интерактивный учебник по супам на орехах о том, как создавать приложения с Svelte.
 
 ## Setup
 
-This repo uses [pnpm](https://pnpm.io/).
+Это репо использует [pnpm](https://pnpm.io/).
 
-## Developing the app
+## Разработка приложения
 
-First, run `node scripts/create-common-bundle`. This packages up everything that's needed to run a SvelteKit app (Vite, esbuild, SvelteKit, Svelte compiler, etc.) which can subsequently be unpacked on a server to create and run an instance of a SvelteKit application (which powers the output window of the tutorial). Then, run `dev`:
+Прежде всего, запустите `node scripts/create-common-bundle`. Это упаковывает все, что нужно для запуска приложения Sveltekit (Vite, esbuild, SvelteKit, Svelte compiler, etc.) который впоследствии может быть распакован на сервере для создания и запуска экземпляра Sveltekit Application (которое питает окно вывода учебника). Затем запустите, `dev`:
 
 ```bash
 node scripts/create-common-bundle
 pnpm dev
 ```
 
-To build for production and run locally:
+Сборка для продакшн и работы локально:
 
 ```bash
 pnpm build
 pnpm preview
 ```
 
-## Creating new tutorials
+## Создание нового туториала
 
-Tutorials live inside `content`. Each tutorial consists of a `README.md`, which is the text to the left, and `app-a` and `app-b` folders, which represent the initial and solved state. Files that stay the same can be omitted from `app-b`. Files are marked as deleted in `app-b` if they start with `__delete`. Folders that are marked as deleted in `app-b` if they contain a file named `__delete`.
+Туториалы живут внутри `content`. Каждый туториал состоит из `README.md`, который является текстом слева, и `app-a` и `app-b` папок, которые представляют исходное и решенное состояние. Файлы, которые остаются такими же, могут быть опущены из `app-b`. Файлы помечены как удаленные в `app-b` если они начинаются с `__delete`. Папки, которые отмечены как удаленные в `app-b` если они содержат файл с именем `__delete`.
 
 ## Bumping tutorial dependencies
 
